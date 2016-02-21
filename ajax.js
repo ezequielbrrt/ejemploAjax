@@ -16,6 +16,7 @@ function nuevoAjax(){
 	return xmlhttp;
 }
 
+//cargar un documento
 function cargarContenido(){
 	var contenedor;
 	contenedor = document.getElementById('contenedor');
@@ -29,13 +30,13 @@ function cargarContenido(){
 	 ajax.send(null);
 }
 
-function cargarContenido(){
+//enviar datos por el metodo get
+function cargarContenido2(){
 	var t1, t2, contenedor;
 	contenedor = document.getElementById('contenedor');
-	t1 = document.getElementById('texto1').value;
-	t2 = document.getElementById('texto2').value;
+	t1 = document.getElementById('nombre').value;
 	ajax=nuevoAjax();
-	ajax.open("GET", "ejemploajax2.php?t1="+t1+"&t2="+t2,true);
+	ajax.open("GET", "ejemplo2.php?t1="+t1,true);
 	ajax.onreadystatechange=function() {
 		if (ajax.readyState==4) {
 		contenedor.innerHTML = ajax.responseText

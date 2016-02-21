@@ -1,3 +1,6 @@
 <?php
-	echo "holi";
+
+	$nombre = $_REQUEST["t1"];
+	echo "$nombre";
+	
 ?>

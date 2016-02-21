@@ -21,9 +21,9 @@ xmlhttp.send();
 </script></head>
 <body><h3>Empieza a escribir un nombre en la casilla para obtener una sugerencia:</h3>
 <form action="">
-Nombre: <input type="text" id="txt1" onkeyup="cargarContenido()" />
+Nombre: <input type="text" id="txt1" onkeyup="cargarContenido2()" />
 </form>
-<button onclick="cargarContenido()">Click</button>
+<button onclick="cargarContenido2()">Click</button>
 <br>
 <p>Sugerencias: <span id="txtSugerencia"></span></p>
 
@@ -31,18 +31,22 @@ Nombre: <input type="text" id="txt1" onkeyup="cargarContenido()" />
 <br>
 <div id="contenedor"></div>
 <br>
-<p></p>
+<form>
+	Nombre<br>
+	<input id="nombre"></input>
+</form>
 <br>
 
 <div>
-<!--<canvas id="chart" width="300" height="300"></canvas>
+
+<canvas id="chart" width="300" height="300"></canvas>
 <script>
 var pieData = [{value:40,color:"#0b82e7",highlight: "#0c62ab",label: "Primer dato"},
 {value:60,color:"#0b82e7",highlight: "#0c62ab",label: "Segundo dato"}];
 var ctx = document.getElementById("chart").getContext("2d");
 window.myPie = new Chart(ctx).Pie(pieData);	
 </script>
--->
+
 
 
 
